@@ -1,4 +1,4 @@
-﻿{% load staticfiles %}
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,11 +10,8 @@
     <meta name="author" content="Bootstrap Gallery" />
     <link rel="shortcut icon" href="{% static 'MainApp/theme-files/img/favicon.ico' %}" />
     <title> {{ title }} </title>
-    {% include 'MainApp/Layout/_Layout_CSS.html' %}\
-
-    {% block SpecificStyles %}
-    {% endblock %}
-
+    {% include 'MainApp/Layout/_Layout_CSS.html' %}
+    
     {% block scripts %}
             
     {% endblock %}

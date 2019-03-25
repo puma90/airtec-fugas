@@ -57,3 +57,15 @@ def about(request):
         }
     )
 
+def mapafugas(request):
+    """Renders the about page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'MainApp/Fuga/mapa-fugas.html',
+        {
+            'title':'mapa fugas',
+            'message':'Your application description page.',
+            'year':datetime.now().year,
+        }
+    )

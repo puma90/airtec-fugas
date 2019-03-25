@@ -44,4 +44,5 @@ urlpatterns = [# Examples:
     re_path(r'^login/$',django.contrib.auth.views.LoginView.as_view(template_name= 'MainApp/Authentication/login.html', 
                                                     authentication_form= BootstrapAuthenticationForm,
                                                     extra_context={ 'title': 'Log in', 'year': datetime.now().year,}),name = 'login'),
-    re_path(r'^logout$', django.contrib.auth.views.LogoutView.as_view(),{ 'next_page': '/',},name = 'logout'),]
+    re_path(r'^logout$', django.contrib.auth.views.LogoutView.as_view(),{ 'next_page': '/',},name = 'logout'),
+    re_path(r'^mapa-fugas/$', default.mapafugas, name='mapa-fugas')]
